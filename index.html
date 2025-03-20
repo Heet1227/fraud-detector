@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="shortcut icon" href="shield.png" class="logo">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Protect yourself from scams - Check websites and phone numbers instantly with our Fraud Detector">
+        <meta name="theme-color" content="#24243e">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Your Name">
+        <title>Fraud Detector</title>
+    
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+        
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    
+<body>
+    <canvas id="bg"></canvas>
+    <main class="container">
+        <header>
+            <h1 class="title">🛡️ Fraud Detector</h1>
+            <p>Protect yourself from scams - Check websites and phone numbers instantly</p>
+        </header>
+        <form id="fraudForm" onsubmit="checkFraud(event)">
+            <div class="form-group">
+                <label for="inputData">Enter Website or Phone Number</label>
+                <input type="text" id="inputData" placeholder="Enter website or phone number" required>
+            </div>
+            <button type="submit" class="check-button">Check Now</button>
+        </form>
+        <div id="results-section" hidden>
+            <p class="result-message"></p>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
